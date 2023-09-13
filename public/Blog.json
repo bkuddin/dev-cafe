@@ -1,0 +1,53 @@
+[
+    {
+      "id": "1",
+      "cover": "https://i.ibb.co/MgYJpn1/dev-1.jpg",
+      "title": "Lorem Ipsum",
+      "author": "John Doe",
+      "author_img": "https://i.ibb.co/80bkrvD/BKUDDIN-Logo.jpg",
+      "posted_date": "2023-09-13",
+      "reading_time": 10,
+      "hashtags": ["Lorem", "Ipsum", "Article"]
+    },
+    {
+      "id": "2",
+      "cover": "https://i.ibb.co/PspmSZ4/dev-2.jpg",
+      "title": "The Art of Writing",
+      "author": "Jane Smith",
+      "author_img": "https://i.ibb.co/80bkrvD/BKUDDIN-Logo.jpg",
+      "posted_date": "2023-09-12",
+      "reading_time": 15,
+      "hashtags": ["Writing", "Craft", "Creative"]
+    },
+    {
+      "id": "3",
+      "cover": "https://i.ibb.co/wLRfGms/dev-3.jpg",
+      "title": "Cooking Adventures",
+      "author": "Chef Johnson",
+      "author_img": "https://i.ibb.co/80bkrvD/BKUDDIN-Logo.jpg",
+      "posted_date": "2023-09-11",
+      "reading_time": 20,
+      "hashtags": ["Cooking", "Recipes", "Food"]
+    },
+    {
+      "id": "4",
+      "cover": "https://i.ibb.co/TrWgvFW/dev-4.jpg",
+      "title": "Tech Trends 2023",
+      "author": "Tech Guru",
+      "author_img": "https://i.ibb.co/80bkrvD/BKUDDIN-Logo.jpg",
+      "posted_date": "2023-09-10",
+      "reading_time": 8,
+      "hashtags": ["Tech", "Trends", "Innovation"]
+    },
+    {
+      "id": "5",
+      "cover": "https://i.ibb.co/Lpz2thX/dev-5.jpg",
+      "title": "Travel Diaries",
+      "author": "Wanderlust Explorer",
+      "author_img": "https://i.ibb.co/80bkrvD/BKUDDIN-Logo.jpg",
+      "posted_date": "2023-09-09",
+      "reading_time": 25,
+      "hashtags": ["Travel", "Adventure", "Explore"]
+    }
+  ]
+  

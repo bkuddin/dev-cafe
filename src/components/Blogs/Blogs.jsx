@@ -12,7 +12,7 @@ const Blogs = () => {
     }, [])
 
     return (
-        <div>
+        <div className="md:w-2/3">
             <h3>Data: {blogs.length}</h3>
             
         </div>

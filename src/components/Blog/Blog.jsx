@@ -1,8 +1,16 @@
 import PropTypes from 'prop-types'; // ES6
+import { useState } from 'react';
 import { BsBookmark } from 'react-icons/bs';
 
-const Blog = ({blog, handleAddToBookmark}) => {
-    const {title, cover, author, author_img, reading_time, posted_date, hashtags  } = blog
+const Blog = ({blog, handleAddToBookmark, handleReadingTime}) => {
+    const {id, title, cover, author, author_img, reading_time, posted_date, hashtags  } = blog
+    
+    // Button Active State
+    const [active, setActive] = useState(false);
+    
+    
+    
+    
     return (
         <div className='mb-20'>
             <img className='w-full rounded-lg' src={cover} alt={`The way of writing img Alt tag in react ${title}`} />
@@ -16,9 +24,11 @@ const Blog = ({blog, handleAddToBookmark}) => {
                 </div>
                 <div className='space-x-2'>
                     <span>{reading_time} min read</span> 
-                    <button className='text-2xl' onClick={()=>handleAddToBookmark(blog)}><BsBookmark></BsBookmark></button>
-
-                </div>
+                     <button className= {active ? "text-red-500" : ""}   onClick={()=>{handleAddToBookmark(blog); setActive(true)} }  ><span className='text-2xl'>
+                         <BsBookmark></BsBookmark>
+                     </span></button>
+                    
+              </div>
             </div>
             <h2 className="text-4xl my-5 ">{title}</h2>
             <p>
@@ -26,6 +36,8 @@ const Blog = ({blog, handleAddToBookmark}) => {
                    hashtags.map((hash, idx) => <span key={idx}><a href=" ">  #{hashtags}</a></span>)
                 }
             </p>
+
+            <button className='text-blue-600 text-xl underline mt-5' onClick={()=>handleReadingTime(id, reading_time)}>Mark as read</button>
             
         </div>
     );
@@ -34,6 +46,7 @@ const Blog = ({blog, handleAddToBookmark}) => {
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
     handleAddToBookmark: PropTypes.func.isRequired,
+    handleReadingTime: PropTypes.func.isRequired,
 }
 
 export default Blog;
